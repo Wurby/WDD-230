@@ -1,0 +1,47 @@
+:root {
+  --primary: #eee4e1;
+  --secondary: #e7d8c9;
+  --tertiary: #e6beae;
+  --textDark: #1a140f;
+  --textLight: #ecf8f8;
+
+  --textXSmall: 0.8rem;
+  --textSmall: 1rem;
+  --textMedium: 1.2rem;
+  --textLarge: 1.4rem;
+  --textXLarge: 1.6rem;
+}
+
+h1 {
+  font-size: var(--textXLarge);
+  color: var(--textDark);
+}
+
+h2 {
+  font-size: var(--textLarge);
+  color: var(--textDark);
+}
+
+h3 {
+  font-size: var(--textMedium);
+  color: var(--textDark);
+}
+
+h4 {
+  font-size: var(--textSmall);
+  color: var(--textDark);
+}
+
+h5 {
+  font-size: var(--textXSmall);
+  color: var(--textDark);
+}
+
+p {
+  font-size: var(--textSmall);
+  color: var(--textDark);
+}
+
+a {
+  color: var(--textDark);
+}
