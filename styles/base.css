@@ -65,15 +65,14 @@ header {
 
 .navigationBar {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-around;
   align-items: center;
-  padding: 0 2rem;
+  padding: 1rem;
   background-color: var(--primary);
   color: var(--textLight);
   font-size: var(--textLarge);
   font-weight: bold;
-  padding: 5px;
-  height: 4rem;
   list-style-type: none;
 }
 
