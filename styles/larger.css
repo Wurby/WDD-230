@@ -50,6 +50,10 @@
     border-radius: 0.5rem;
   }
 
+  #imgBuffer {
+    width: 125px;
+  }
+
   .navigationBar {
     display: flex;
     flex-direction: row;

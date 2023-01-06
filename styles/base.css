@@ -31,7 +31,7 @@ main > * {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem;
   background-color: var(--secondary);
