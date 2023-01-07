@@ -22,25 +22,19 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: var(--secondary);
-    box-shadow: 0 0 1rem var(--shadow);
+    background-color: var(--primary);
   }
 
   .cardCarousel {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
   }
 
   .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
     border: 1px solid var(--textFaded);
-    width: 15%;
+    width: 25%;
     max-height: 200px;
     min-height: 150px;
   }
@@ -59,61 +53,9 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--primary);
-    color: var(--textLight);
     font-size: var(--textLarge);
     font-weight: bold;
-    height: 4rem;
+    height: 2rem;
     list-style-type: none;
-  }
-
-  h1 {
-    font-size: var(--textLarge);
-    font-weight: bold;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: var(--textMedium);
-    font-weight: bold;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: var(--textSmall);
-    font-weight: bold;
-    text-align: center;
-  }
-
-  h4 {
-    font-size: var(--textXSmall);
-    color: var(--textFaded);
-    font-weight: bold;
-    text-align: center;
-  }
-
-  p {
-    font-size: var(--textSmall);
-    text-align: justify;
-  }
-
-  a {
-    color: var(--textDark);
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: var(--secondary);
-    text-decoration: underline;
-  }
-
-  a:visited {
-    color: var(--textDark);
-    text-decoration: none;
-  }
-
-  a:active {
-    color: var(--textDark);
-    text-decoration: none;
   }
 }
