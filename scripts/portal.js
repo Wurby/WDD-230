@@ -38,8 +38,12 @@ mobileMenu.addEventListener("click", () => {
   document.querySelector(".mobile-menu-hider").classList.toggle("hidden");
 });
 
+const mobileMenuHider = document.querySelector(".mobile-menu-hider");
+
 document.body.addEventListener("click", (e) => {
   if (e.target !== mobileMenu) {
-    document.querySelector(".mobile-menu-hider").classList.toggle("hidden");
+    if (mobileMenuHider.classList.contains("hidden") === false) {
+      document.querySelector(".mobile-menu-hider").classList.toggle("hidden");
+    }
   }
 });
