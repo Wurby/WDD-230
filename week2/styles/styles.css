@@ -46,8 +46,7 @@ article p {
 }
 
 .callout {
-  color: #ddd;
-  background-color: #702963;
+  background-color: lightgrey;
   padding: 1rem;
 }
 
