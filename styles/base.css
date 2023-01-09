@@ -6,10 +6,11 @@
   --textXXSmall: 0.75rem;
   --primary: #51b4a0;
   --secondary: #2d655a;
-  --textDark: #000000;
-  --textLight: #ffffff;
+  --textLight: #f6f6f6;
+  --textDark: #191919;
   --textGrey: #f4f4f4;
-  --textFaded: #8bc4b8;
+  --textDarkGrey: #4d4d4d;
+  --textFaded: #7cafa4;
   --shadow: #a2a2a2;
 }
 
@@ -40,14 +41,18 @@ main > * {
   margin: 1rem;
 }
 
+footer {
+  margin: 1rem;
+}
+
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
+  color: var(--textDark);
   background-color: var(--primary);
 }
-
 .cardCarousel {
   display: flex;
   flex-direction: column;
@@ -66,6 +71,20 @@ header {
   position: relative;
 }
 
+#desktop-menu {
+  display: none;
+}
+
+#mobile-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: var(--textMedium);
+  padding: 1rem 1rem;
+  color: var(--textLight);
+  background-color: var(--secondary);
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -73,6 +92,7 @@ header {
   margin-top: 1rem;
   width: 75%;
   background-color: var(--textLight);
+  color: var(--textDark);
   min-height: 150px;
 }
 
@@ -87,18 +107,6 @@ main {
 .profile {
   max-height: 50px;
   border-radius: 100%;
-}
-
-.navigationBar {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
-  background-color: var(--secondary);
-  color: var(--textLight);
-  font-weight: bold;
-  list-style-type: none;
 }
 
 .collapsible {
@@ -125,10 +133,6 @@ main {
 
 .collapsible > * {
   margin: 0.5rem 1rem;
-}
-
-.hidden {
-  display: none;
 }
 
 h1 {
@@ -181,4 +185,47 @@ a {
 a:hover {
   color: var(--textFaded);
   text-decoration: none;
+}
+.dark {
+  background-color: var(--textDark);
+  color: var(--textLight);
+}
+
+.darkGrey {
+  background-color: var(--textDarkGrey);
+  color: var(--textLight);
+}
+
+#mobile-menu-wrapper {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 7%;
+  right: 5%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--secondary);
+  background-color: var(--textLight);
+  font-size: var(--textMedium);
+  color: var(--secondary);
+  width: 100px;
+}
+
+#mobile-menu-wrapper > * {
+  border-bottom: 1px solid var(--primary);
+  font-size: var(--textMedium);
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+#mobile-menu-wrapper > a:active,
+i:active {
+  font-size: var(--textMedium);
+  background-color: var(--primary);
+}
+
+.hidden {
+  display: none;
 }

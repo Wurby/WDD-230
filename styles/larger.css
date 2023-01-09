@@ -25,6 +25,10 @@
     background-color: var(--primary);
   }
 
+  #mobile-menu {
+    display: none;
+  }
+
   .cardCarousel {
     display: flex;
     align-items: baseline;
@@ -49,13 +53,22 @@
   }
 
   .navigationBar {
+    display: block;
+  }
+
+  #desktop-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-size: var(--textLarge);
-    font-weight: bold;
-    height: 2rem;
-    list-style-type: none;
+    padding: 1rem;
+    background-color: var(--secondary);
+    font-size: var(--textMedium);
+    color: var(--textLight);
+  }
+
+  #desktop-menu > * {
+    color: var(--textLight);
+    font-size: var(--textMedium);
   }
 }
