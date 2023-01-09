@@ -5,7 +5,7 @@
   --textXSmall: 0.85rem;
   --textXXSmall: 0.75rem;
   --primary: #51b4a0;
-  --secondary: #4e8579;
+  --secondary: #2d655a;
   --textDark: #000000;
   --textLight: #ffffff;
   --textGrey: #f4f4f4;
@@ -57,7 +57,8 @@ header {
 }
 
 .card-header {
-  background-color: var(--primary);
+  background-color: var(--secondary);
+  color: var(--textLight);
   margin: 0;
   padding: 0;
   width: 100%;
@@ -68,7 +69,7 @@ header {
 .card {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--textFaded);
+  border: 1px solid var(--secondary);
   margin-top: 1rem;
   width: 75%;
   background-color: var(--textLight);
@@ -151,6 +152,7 @@ h3 {
 h4 {
   font-size: var(--textXSmall);
   color: var(--textFaded);
+  margin: 0.5rem 0;
   font-weight: bold;
   text-align: center;
 }
@@ -158,11 +160,13 @@ h4 {
 h5 {
   font-size: var(--textXXSmall);
   color: var(--textFaded);
+  margin: 0.5rem 0;
   font-weight: bold;
   text-align: center;
 }
 
 p {
+  margin: 0.5rem 0;
   font-size: var(--textSmall);
   text-align: justify;
 }
@@ -170,7 +174,7 @@ p {
 a {
   color: var(--secondary);
   font-size: var(--textSmall);
-  margin: 0.25rem 0;
+  margin: 0.5rem 0;
   text-decoration: none;
 }
 
