@@ -27,6 +27,7 @@
 
   .cardCarousel {
     display: flex;
+    align-items: baseline;
     flex-direction: row;
   }
 
@@ -35,7 +36,6 @@
     flex-direction: column;
     border: 1px solid var(--textFaded);
     width: 25%;
-    max-height: 200px;
     min-height: 150px;
   }
 

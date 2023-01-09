@@ -9,8 +9,17 @@
   --textDark: #000000;
   --textLight: #ffffff;
   --textGrey: #f4f4f4;
-  --textFaded: #1e8570;
+  --textFaded: #8bc4b8;
   --shadow: #a2a2a2;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-40%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Mobile Styles */
@@ -42,18 +51,18 @@ header {
 .cardCarousel {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
+  min-height: 300px;
 }
 
 .card-header {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   margin: 0;
   padding: 0;
   width: 100%;
   height: 25px;
   position: relative;
-  z-index: -1;
 }
 
 .card {
@@ -63,13 +72,11 @@ header {
   margin-top: 1rem;
   width: 75%;
   background-color: var(--textLight);
-  max-height: 200px;
   min-height: 150px;
 }
 
 .card > *:not(div) {
   padding: 0 1rem;
-  padding-bottom: 1rem;
 }
 
 main {
@@ -91,6 +98,36 @@ main {
   color: var(--textLight);
   font-weight: bold;
   list-style-type: none;
+}
+
+.collapsible {
+  width: 100%;
+}
+
+.collapsible-content {
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 0.35s ease-out;
+}
+
+.collapsible > p {
+  background-color: var(--textFaded);
+  border-bottom: 1px solid var(--secondary);
+  font-size: var(--textMedium);
+  margin: 0;
+}
+
+.collapsible > p > span {
+  float: right;
+  margin: 0 1rem;
+}
+
+.collapsible > * {
+  margin: 0.5rem 1rem;
+}
+
+.hidden {
+  display: none;
 }
 
 h1 {
@@ -131,22 +168,13 @@ p {
 }
 
 a {
-  color: var(--textDark);
+  color: var(--secondary);
   font-size: var(--textSmall);
+  margin: 0.25rem 0;
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--secondary);
-  text-decoration: underline;
-}
-
-a:visited {
-  color: var(--textDark);
-  text-decoration: none;
-}
-
-a:active {
-  color: var(--textDark);
+  color: var(--textFaded);
   text-decoration: none;
 }
