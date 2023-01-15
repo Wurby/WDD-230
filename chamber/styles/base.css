@@ -1,0 +1,174 @@
+:root {
+  --primaryLight: #628395;
+  --primaryDark: #526b7a;
+  --secondaryLight: #222050;
+  --secondaryDark: #0c0a3e;
+
+  --textDark: #2c262c;
+  --accentDark: #2c262c;
+  --textLight: #ccdce0;
+  --accentLight: #ccdce0;
+
+  --textXSmall: 0.8rem;
+  --textSmall: 1rem;
+  --textMedium: 1.2rem;
+  --textLarge: 1.4rem;
+  --textXLarge: 1.6rem;
+}
+h1 {
+  font-size: var(--textXLarge);
+  color: var(--textDark);
+}
+
+h2 {
+  font-size: var(--textLarge);
+  color: var(--textDark);
+}
+
+h3 {
+  font-size: var(--textMedium);
+  color: var(--textDark);
+}
+
+h4 {
+  font-size: var(--textSmall);
+  color: var(--textDark);
+}
+
+h5 {
+  font-size: var(--textXSmall);
+  color: var(--textDark);
+}
+
+p {
+  font-size: var(--textSmall);
+  color: var(--textDark);
+}
+
+a {
+  color: var(--textDark);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+i {
+  color: var(--textDark);
+  font-size: var(--textLarge);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--accentLight);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-img {
+  background: url("./../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 65%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  height: 125px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+nav > * {
+  padding: 0 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn {
+  background-color: var(--primaryLight);
+  color: var(--textDark);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: var(--textSmall);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--primaryDark);
+}
+
+.btn:active {
+  background-color: var(--primaryLight);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.card {
+  margin: 1rem;
+  width: 30%;
+  height: 300px;
+  border: 1px solid var(--accentDark);
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+}
+
+#footer-contact-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#footer-contact-information > * {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
