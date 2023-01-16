@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lazy Load Example</title>
+    <link rel="stylesheet" href="./styles/lazyload.css" />
+    <script
+      src="https://kit.fontawesome.com/f288f45790.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="./../index.html"><span class="fa-solid fa-arrow-left"></span></a>
+      <h1>Lazy Loading Example</h1>
+      <a><span class="fa-solid fa-smile"></span></a>
+    </header>
+    <main>
+      <picture>
+        <img
+          src="https://source.unsplash.com/random/400x600/?landscape"
+          alt="An unsplash image"
+          loading="lazy"
+          width="400"
+          height="600"
+        />
+      </picture>
+      <picture>
+        <img
+          src="https://source.unsplash.com/random/400x600/?cars"
+          alt="An unsplash image"
+          loading="lazy"
+          width="400"
+          height="600"
+        />
+      </picture>
+      <picture>
+        <img
+          src="https://source.unsplash.com/random/400x600/?boats"
+          alt="An unsplash image"
+          loading="lazy"
+          width="400"
+          height="600"
+        />
+      </picture>
+      <picture>
+        <img
+          src="https://source.unsplash.com/random/400x600/?america"
+          alt="An unsplash image"
+          loading="lazy"
+          width="400"
+          height="600"
+        />
+      </picture>
+      <picture>
+        <img
+          src="https://source.unsplash.com/random/400x600/?planes"
+          alt="An unsplash image"
+          loading="lazy"
+          width="400"
+          height="600"
+        />
+      </picture>
+      <picture>
+        <img
+          src="https://source.unsplash.com/random/400x600/?europe"
+          alt="An unsplash image"
+          loading="lazy"
+          width="400"
+          height="600"
+        />
+      </picture>
+    </main>
+
+    <footer>
+      <p id="footer-last-modified">Last Modified:</p>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+  </body>
+</html>
