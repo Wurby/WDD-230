@@ -25,6 +25,18 @@
     background-color: var(--primary);
   }
 
+  main > picture {
+    justify-self: center;
+    align-self: center;
+  }
+
+  main > picture > img {
+    position: static;
+    max-width: 400px;
+    opacity: 100%;
+    border-radius: 0.33rem;
+  }
+
   #mobile-menu {
     display: none;
   }
@@ -41,15 +53,12 @@
     border: 1px solid var(--textFaded);
     width: 25%;
     min-height: 150px;
+    z-index: 2;
   }
 
   .profile {
     max-height: 125px;
     border-radius: 0.5rem;
-  }
-
-  #imgBuffer {
-    width: 125px;
   }
 
   .navigationBar {
@@ -70,5 +79,9 @@
   #desktop-menu > * {
     color: var(--textLight);
     font-size: var(--textMedium);
+  }
+
+  .map {
+    max-width: 600px;
   }
 }

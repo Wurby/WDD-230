@@ -47,3 +47,27 @@ document.body.addEventListener("click", (e) => {
     }
   }
 });
+
+const addStorage = (key, value) => {
+  localStorage.setItem(key, value);
+};
+
+const getStorage = (key) => {
+  return localStorage.getItem(key);
+};
+
+const removeStorage = (key) => {
+  localStorage.removeItem(key);
+};
+
+const visitCount = () => {
+  let count = getStorage("visitCount");
+  if (count === null) {
+    count = 0;
+  }
+  count++;
+  addStorage("visitCount", count);
+  return count;
+};
+
+document.querySelector("#visitCount").innerHTML = visitCount();

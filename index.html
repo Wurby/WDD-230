@@ -50,15 +50,21 @@
     </nav>
 
     <header>
-      <img src="./images/me.png" class="profile" />
+      <img src="./images/me.webp" class="profile" />
       <div>
         <h1>Joshua Pearson</h1>
         <h3>WDD 230 - Web Front-End Development</h3>
       </div>
-      <div id="imgBuffer"></div>
+      <div class="img-buffer"></div>
     </header>
 
     <main>
+      <picture>
+        <img
+          src="./images/logan-sunny.webp"
+          alt="A sunny picture of Logan Temple"
+        />
+      </picture>
       <h2>WDD 230: Course Activity Portal</h2>
       <section class="cardCarousel">
         <section class="card">
@@ -129,7 +135,23 @@
           <h5>Weather</h5>
           <p>Weather is currently unavailable</p>
           <h5>Visits to the page:</h5>
+          <p id="visits">
+            Number of visits to the page: <span id="visitCount"></span>
+          </p>
         </section>
+      </section>
+      <section class="map">
+        <iframe
+          width="600"
+          height="450"
+          style="border: 0"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAw9XuWEkPyKrJSpHlaILLmAaIsPqQ12h8
+    &q=Logan,Ut"
+        >
+        </iframe>
       </section>
     </main>
 

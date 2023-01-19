@@ -37,7 +37,7 @@ body {
   flex-direction: column;
 }
 
-main > * {
+main > *:not(picture) {
   margin: 1rem;
 }
 
@@ -53,6 +53,13 @@ header {
   color: var(--textDark);
   background-color: var(--primary);
 }
+
+main > picture > img {
+  opacity: 80%;
+  pointer-events: none;
+  width: 100%;
+}
+
 .cardCarousel {
   display: flex;
   flex-direction: column;
@@ -94,6 +101,7 @@ header {
   background-color: var(--textLight);
   color: var(--textDark);
   min-height: 150px;
+  z-index: 2;
 }
 
 .card > *:not(div) {
@@ -101,6 +109,8 @@ header {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   background-color: var(--textGrey);
 }
 
@@ -133,6 +143,18 @@ main {
 
 .collapsible > * {
   margin: 0.5rem 1rem;
+}
+
+.map {
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+}
+
+.map > iframe {
+  width: 600;
+  height: 450;
+  max-width: 100%;
 }
 
 h1 {
