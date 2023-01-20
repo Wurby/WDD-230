@@ -38,6 +38,12 @@
     background-color: black;
   }
 
+  .img-label {
+    position: absolute;
+    top: 40%;
+    right: 35%;
+  }
+
   #mobile-menu {
     display: none;
   }

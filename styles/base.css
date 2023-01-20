@@ -60,6 +60,15 @@ main > picture > img {
   width: 100%;
 }
 
+.img-label {
+  position: absolute;
+  top: 28%;
+  right: 5%;
+  background-color: var(--primary);
+  padding: 0 0.5rem;
+  border-radius: 0.33rem;
+}
+
 .cardCarousel {
   display: flex;
   flex-direction: column;
