@@ -12,7 +12,18 @@
   --textMedium: 1.2rem;
   --textLarge: 1.4rem;
   --textXLarge: 1.6rem;
+  --shadow: #3a4e59;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0.5rem;
+}
+
 h1 {
   font-size: var(--textXLarge);
   color: var(--textDark);
@@ -70,11 +81,28 @@ body {
   background: url("./../images/hero.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 40%;
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: -2;
+}
+
+.hero-img::after {
+  content: "";
   z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 667px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 main {
@@ -85,9 +113,8 @@ main {
 .top-bar {
   display: flex;
   flex-direction: column;
-  background-color: var(--accentLight);
   margin-bottom: 1rem;
-  height: 125px;
+  height: 10rem;
 }
 
 nav {
@@ -96,7 +123,8 @@ nav {
   background-color: var(--primaryLight);
   align-items: center;
   width: 100%;
-  height: 50px;
+  height: 3rem;
+  z-index: 1;
 }
 
 nav > * {
@@ -107,6 +135,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--accentLight);
   width: 100%;
   height: 75px;
 }
@@ -138,7 +167,7 @@ header {
 
 .cards {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
   width: 100%;
@@ -146,20 +175,38 @@ header {
 
 .card {
   margin: 1rem;
-  width: 30%;
+  width: 90%;
   height: 300px;
   border: 1px solid var(--accentDark);
   text-align: center;
 }
 
+.localPhotos > .card {
+  margin: 0;
+  width: 100%;
+  background-color: var(--primaryLight);
+  border: none;
+}
+
+.localPhotos > .card > img {
+  width: 100%;
+  height: 90%;
+}
+.localPhotos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
 footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  height: 75px;
+  flex-direction: column;
+  padding: 1rem 0;
 }
 
 #footer-contact-information {

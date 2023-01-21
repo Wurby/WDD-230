@@ -1,0 +1,61 @@
+.open {
+  animation: slide 0.33s ease-in-out forwards;
+}
+
+.closed {
+  animation: slideOut 0.33s ease-in-out forwards;
+}
+
+@keyframes slide {
+  0% {
+    top: -10rem;
+  }
+  100% {
+    top: 3rem;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    top: 3rem;
+  }
+  100% {
+    top: -10rem;
+  }
+}
+
+.menu {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 1rem;
+  background-color: white;
+  z-index: 0;
+  width: 5rem;
+  box-shadow: 0 0 1rem 0 var(--shadow);
+  gap: 0.5rem;
+}
+
+.menu > * {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.buttonPop {
+  animation: buttonWave 0.33s ease-in-out forwards;
+}
+
+@keyframes buttonWave {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
