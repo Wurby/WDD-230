@@ -1,9 +1,9 @@
 .open {
-  animation: slide 0.33s ease-in-out forwards;
+  animation: slide 0.2s ease-in-out forwards;
 }
 
 .closed {
-  animation: slideOut 0.33s ease-in-out forwards;
+  animation: slideOut 0.2s ease-in-out forwards;
 }
 
 @keyframes slide {
