@@ -184,6 +184,7 @@ header {
 .localPhotos > .card {
   margin: 0;
   width: 100%;
+  height: 400px;
   background-color: var(--primaryLight);
   border: none;
 }
@@ -191,6 +192,7 @@ header {
 .localPhotos > .card > img {
   width: 100%;
   height: 90%;
+  object-fit: cover;
 }
 .localPhotos {
   display: flex;

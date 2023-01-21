@@ -44,6 +44,10 @@
     grid-gap: 1rem;
   }
 
+  .localPhotos > *:hover {
+    animation: pop 0.2s alternate ease-in-out forwards;
+  }
+
   footer {
     bottom: 0;
     width: 100%;
@@ -52,5 +56,14 @@
     justify-content: space-around;
     align-items: center;
     height: 75px;
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
   }
 }
