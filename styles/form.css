@@ -1,0 +1,133 @@
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-wrapper h3 {
+  flex-basis: 100%;
+  text-align: center;
+  transform: translateY(1.7rem);
+}
+
+.form-wrapper h3 span {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: var(--textFaded);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--textFaded);
+  border-radius: 0.33rem;
+}
+
+form input {
+  border: none;
+  border-radius: 0.33rem;
+  background-color: var(--textGrey);
+  color: var(--textLight);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.form :valid {
+  border-left: 0.5rem solid var(--primary);
+  color: var(--textDark);
+}
+
+.form :invalid {
+  border-left: 0.5rem solid var(--warn);
+  color: var(--textDark);
+}
+
+#fullnameLabel {
+}
+#fullname {
+  margin-bottom: 1rem;
+}
+#emailLabel {
+}
+#email {
+  margin-bottom: 1rem;
+}
+#pageratingLabel {
+}
+#pagerating {
+}
+#pageratingvalue {
+  margin-bottom: 1rem;
+}
+#usernameLabel {
+}
+#usernameIdentifier {
+  margin-bottom: 1rem;
+}
+#confirmUsernameLabel {
+}
+#confirmUsernameIdentifier {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.33rem;
+  background-color: var(--primary);
+  color: var(--textLight);
+  padding: 0.5rem 1rem;
+}
+
+.btn:active {
+  background-color: var(--secondary);
+}
+
+.btn:disabled {
+  background-color: var(--textFaded);
+  color: var(--textDark);
+}
+
+form #formMessage {
+  max-width: 15rem;
+}
+
+#table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+#table-wrapper p {
+  flex-basis: 100%;
+  text-align: center;
+  transform: translateY(1.7rem);
+}
+
+table {
+  border-collapse: collapse;
+  width: 30%;
+  text-align: center;
+}
+
+.th {
+  background-color: var(--textFaded);
+  color: var(--textLight);
+  padding: 0.5rem 1rem;
+}
+
+td {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--secondary);
+}
+
+tr:nth-child(odd):not(:nth-child(1)) {
+  background-color: var(--primary);
+}

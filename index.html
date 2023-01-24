@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/form.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <script
       src="https://kit.fontawesome.com/f288f45790.js"
@@ -163,6 +164,72 @@
         </iframe>
       </section>
     </main>
+
+    <section id="table-wrapper">
+      <table></table>
+    </section>
+
+    <section class="form-wrapper">
+      <h3><span>Contact Me</span></h3>
+      <form action="" method="get" class="form" onsubmit="submitForm">
+        <label for="fullname" id="fullnameLabel"> Full Name </label>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="Joseph Young"
+          required
+        />
+
+        <label for="email" id="emailLabel"> Email </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Jacob@jones.com"
+        />
+
+        <label for="pagerating" id="pageRatingLabel">Page Rating</label>
+        <input
+          type="range"
+          min="0"
+          max="10"
+          id="pagerating"
+          name="pagerating"
+          oninput="document.getElementById('pageratingvalue').value = this.value"
+          required
+        />
+        <output id="pageratingvalue">5</output>
+
+        <label for="usernameIdentifier" id="usernameLabel">
+          Username Identifier
+        </label>
+        <input
+          type="password"
+          id="usernameIdentifier"
+          name="usernameIdentifier"
+          placeholder="Unique Identifier"
+          required
+        />
+
+        <label for="confirmUsernameIdentifier" id="confirmUsernameLabel">
+          Confirm Username Identifier
+        </label>
+        <input
+          type="password"
+          id="confirmUsernameIdentifier"
+          name="confirmUsernameIdentifier"
+          placeholder="Confirm Unique Identifier"
+          required
+        />
+
+        <p id="formMessage"></p>
+
+        <button id="submitBtn" class="btn" type="submit">
+          <span class="fa-solid fa-paper-plane"></span> Send Message
+        </button>
+      </form>
+    </section>
 
     <footer>
       <p>

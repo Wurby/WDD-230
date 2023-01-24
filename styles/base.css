@@ -12,6 +12,7 @@
   --textDarkGrey: #4d4d4d;
   --textFaded: #2d737b;
   --shadow: #a2a2a2;
+  --warn: #cf7a6c;
 }
 
 @keyframes slideIn {
