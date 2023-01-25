@@ -204,7 +204,7 @@ h5 {
 p {
   margin: 0.5rem 0;
   font-size: var(--textSmall);
-  text-align: justify;
+  text-align: left;
 }
 
 a {

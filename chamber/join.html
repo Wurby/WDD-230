@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta property="og:title" content="Joshua's wdd230 portal page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wurby.github.io/wdd230" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1567810798315-fa9da859b8ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2825&q=80"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD230 Chamber of Commerce</title>
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
+    <link rel="stylesheet" href="./styles/menu.css" />
+    <script
+      src="https://kit.fontawesome.com/f288f45790.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="hero-img"></div>
+    <div class="top-bar">
+      <nav>
+        <a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <a><i class="fa-solid fa-hamburger"></i></a>
+      </nav>
+      <section class="menu closed">
+        <a href="./index.html">Home</a>
+        <a href="./discovery.html">Discovery</a>
+        <a>Directory</a>
+        <a>Join</a>
+      </section>
+      <header>
+        <h3>Smithfield Chamber of Commerce</h3>
+      </header>
+    </div>
+    <main>
+      <section class="join">
+        <form
+          action="./thankyou.html"
+          onsubmit="return validate()"
+          method="get"
+          required
+        >
+          <h3>Join the Chamber</h3>
+          <label for="fname">First Name*</label>
+          <input
+            type="text"
+            name="fname"
+            placeholder="John"
+            id="fname"
+            required
+          />
+          <label for="lname">Last Name*</label>
+          <input
+            type="text"
+            name="lname"
+            placeholder="Doe"
+            id="lname"
+            required
+          />
+          <label for="title">Representative Title</label>
+          <input
+            type="text"
+            name="title"
+            placeholder="Senior Boring Executive"
+            id="title"
+            onkeyup="verifyTitle()"
+          />
+          <label for="email">Email Address*</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="john.doe@boringco.com"
+            id="email"
+            required
+          />
+          <label for="phone">Phone Number*</label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="801-555-5555"
+            id="phone"
+            required
+          />
+          <label for="company">Business Name*</label>
+          <input
+            type="text"
+            name="company"
+            placeholder="Boring Co."
+            id="businessName"
+            required
+          />
+          <label for="businessType">Business Type*</label>
+          <section class="radios">
+            <label for="nonprofit">
+              <input
+                name="businessType"
+                type="radio"
+                value="nonprofit"
+                id="nonprofit"
+              />Nonprofit</label
+            >
+            <label for="bronze">
+              <input
+                name="businessType"
+                type="radio"
+                value="bronze"
+                id="bronze"
+              />Bronze</label
+            >
+            <label for="silver">
+              <input
+                name="businessType"
+                type="radio"
+                value="silver"
+                id="silver"
+              />Silver</label
+            >
+            <label for="gold">
+              <input
+                name="businessType"
+                type="radio"
+                value="gold"
+                id="gold"
+              />Gold</label
+            >
+          </section>
+          <label for="businessDescription">Business Description*</label>
+          <textarea
+            name="businessDescription"
+            id="businessDescription"
+            onkeyup="verifyDescription()"
+            placeholder="Describe your business here."
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+          <input
+            type="hidden"
+            name="date"
+            id="date"
+            value="() => {new Date()}"
+          />
+          <p class="formMessage"></p>
+          <input type="submit" class="btn" value="Apply to Join" />
+          <script src="./scripts/join.js"></script>
+        </form>
+        <div class="verticalDivider"></div>
+        <section class="tiers">
+          <h3>Membership Tiers</h3>
+          <div class="tier"></div>
+          <div class="tier"></div>
+          <div class="tier"></div>
+          <div class="tier"></div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div id="footer-contact-information">
+        <p id="footer-name">Joshua Keith Pearson</p>
+        <p>
+          Email:
+          <a href="mailto:developer@joshuakpearson.com"
+            >developer@joshuakpearson.com</a
+          >
+        </p>
+        <p>Phone: 801-669-6621</p>
+      </div>
+      <p id="footer-class-name">Created for BYU-I Class WDD 230</p>
+      <p id="footer-last-modified">Last Modified:</p>
+
+      <script src="./scripts/last-modified.js"></script>
+    </footer>
+    <script src="./scripts/chamber.js"></script>
+    <script src="./scripts/menu.js"></script>
+  </body>
+</html>

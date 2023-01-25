@@ -89,8 +89,8 @@ form input {
 }
 
 .btn:disabled {
-  background-color: var(--textFaded);
-  color: var(--textDark);
+  background-color: var(--textGrey);
+  color: var(--textFaded);
 }
 
 form #formMessage {

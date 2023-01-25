@@ -166,5 +166,7 @@ submitBtn.addEventListener("click", (e) => {
       username: document.querySelector("#usernameIdentifier").value,
     };
     addTable(tableData);
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = "Message Sent";
   }
 });

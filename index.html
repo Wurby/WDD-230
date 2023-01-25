@@ -172,7 +172,7 @@
     <section class="form-wrapper">
       <h3><span>Contact Me</span></h3>
       <form action="" method="get" class="form" onsubmit="submitForm">
-        <label for="fullname" id="fullnameLabel"> Full Name </label>
+        <label for="fullname" id="fullnameLabel"> Full Name* </label>
         <input
           type="text"
           id="fullname"
@@ -181,12 +181,13 @@
           required
         />
 
-        <label for="email" id="emailLabel"> Email </label>
+        <label for="email" id="emailLabel"> Email* </label>
         <input
           type="email"
           id="email"
           name="email"
           placeholder="Jacob@jones.com"
+          required
         />
 
         <label for="pagerating" id="pageRatingLabel">Page Rating</label>
@@ -202,7 +203,7 @@
         <output id="pageratingvalue">5</output>
 
         <label for="usernameIdentifier" id="usernameLabel">
-          Username Identifier
+          Username Identifier*
         </label>
         <input
           type="password"
