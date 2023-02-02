@@ -1,0 +1,116 @@
+:root {
+  --primary: #508991;
+  --secondary: #172a3a;
+  --warn: #e26d5a;
+  --success: #09bc8a;
+  --text-light: #f7f7f7;
+  --text-dark: #0b0e14;
+  --text-faded: #2c4c51;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0.33rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0.33rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin: 0.33rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1rem;
+  margin: 0.33rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 0.875rem;
+  margin: 0.33rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 0.75rem;
+  margin: 0.33rem;
+  font-weight: 200;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0.33rem;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--text-dark);
+}
+
+a:active {
+  color: var(--text-dark);
+}
+
+header a {
+  color: var(--text-light);
+  font-size: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--text-dark);
+  color: var(--text-light);
+  text-align: center;
+  padding: 15px;
+}
+
+header a:hover {
+  color: var(--text-light);
+}
+
+header a:visited {
+  color: var(--text-light);
+}
+
+header a:active {
+  color: var(--text-light);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: var(--text-dark);
+  color: var(--text-light);
+  text-align: center;
+  padding: 15px;
+  bottom: 0;
+}
