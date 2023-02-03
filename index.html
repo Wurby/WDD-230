@@ -71,70 +71,16 @@
       </picture>
       <h2>WDD 230: Course Activity Portal</h2>
       <section class="cardCarousel">
-        <section class="card">
+        <section class="card learning-activities">
           <div class="card-header">
             <h3>Learning Activities</h3>
           </div>
-          <div class="collapsible">
+          <!-- <div class="collapsible">
             <p>Week 1 <span class="fa-solid fa-plus"></span></p>
             <div class="collapsible-content hidden">
               <a href="./week1/holygrail.html">Holy Grail</a>
             </div>
-          </div>
-          <div class="collapsible">
-            <p>Week 2 <span class="fa-solid fa-plus"></span></p>
-            <div class="collapsible-content hidden">
-              <a href="./week2/design.html">Design</a>
-              <a href="https://codepen.io/wurby/pen/MWBpWWO">Codepen Menu</a>
-              <a href="./week2/bom.html">DOM with BoM</a>
-            </div>
-          </div>
-          <div class="collapsible">
-            <p>Week 3 <span class="fa-solid fa-plus"></span></p>
-            <div class="collapsible-content hidden">
-              <a href="./week3/images/landscape.webp"
-                ><span class="fa-solid fa-image"></span> webp image</a
-              >
-              <a href="./week3/lazyload.html">
-                <span class="fa-solid fa-person-digging"></span> Lazy Loading
-                Example</a
-              >
-              <a href="./week3/bom.html"
-                ><i class="fa-solid fa-book"></i> Book of Mormon favorites,
-                persistence</a
-              >
-            </div>
-          </div>
-          <div class="collapsible">
-            <p>Week 4 <span class="fa-solid fa-plus"></span></p>
-            <div class="collapsible-content hidden">
-              <a href="https://codepen.io/wurby/pen/vYadMxp">Pseudo-classes</a>
-              <a href="./week4/images/Screenshot 2023-01-23 at 1.03.15 PM.png"
-                >Css Combinators proof.</a
-              >
-              <a href="./week4/table.html">Table Learning</a>
-            </div>
-          </div>
-          <div class="collapsible">
-            <p>Week 5 <span class="fa-solid fa-plus"></span></p>
-            <div class="collapsible-content hidden">
-              <a href="https://codepen.io/wurby/pen/GRBwYgJ">Pseudo-elements</a>
-              <a href="./week5/new-ward-memebers.json"
-                ><i class="fa-solid fa-database"></i> Json File</a
-              >
-
-              <a href="./week5/latter-day-prophets.html">Fetch Prophets</a>
-              <a href="./week5/weather.html">Weather</a>
-            </div>
-          </div>
-          <div class="collapsible">
-            <p>Week 6 <span class="fa-solid fa-plus"></span></p>
-            <div class="collapsible-content hidden"></div>
-          </div>
-          <div class="collapsible">
-            <p>Week 7 <span class="fa-solid fa-plus"></span></p>
-            <div class="collapsible-content hidden"></div>
-          </div>
+          </div> -->
         </section>
 
         <section class="card">
@@ -150,8 +96,15 @@
           <div class="card-header">
             <h3>Information</h3>
           </div>
-          <h5>Weather</h5>
-          <p>Weather is currently unavailable.</p>
+          <h5 id="weather-title">Weather</h5>
+          <section class="weather-card">
+            <p id="current-temp"></p>
+            <figure>
+              <img id="weather-icon" src="" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </section>
+          <script src="./scripts/weather.js"></script>
           <h5>Visits to the page:</h5>
           <p id="visits">
             Number of visits to the page: <span id="visitCount"></span>
@@ -178,7 +131,7 @@
     </section>
 
     <section class="form-wrapper">
-      <h3><span>Contact Me</span></h3>
+      <h3><span class="light">Contact Me</span></h3>
       <form action="" method="get" class="form" onsubmit="submitForm">
         <label for="fullname" id="fullnameLabel"> Full Name* </label>
         <input

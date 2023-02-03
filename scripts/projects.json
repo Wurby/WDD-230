@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Week 1",
+    "site-plan": {
+      "name": "Site Plan",
+      "icon": "fa-map",
+      "link": "./week1/CoC/CoC-site-plan.html"
+    },
+    "holy-grail": {
+      "name": "Holy Grail",
+      "icon": "fa-trophy",
+      "link": "./week1/holygrail.html"
+    }
+  },
+  {
+    "name": "Week 2",
+    "BoM": {
+      "name": "BoM",
+      "icon": "fa-book",
+      "link": "./week2/bom.html"
+    },
+    "design": {
+      "name": "Design",
+      "icon": "fa-paint-brush",
+      "link": "./week2/design.html"
+    }
+  },
+  {
+    "name": "Week 3",
+    "bom2": {
+      "name": "BoM",
+      "icon": "fa-book",
+      "link": "./week3/bom.html"
+    },
+    "lazyload": {
+      "name": "Lazy Load",
+      "icon": "fa-cloud-download",
+      "link": "./week3/lazyload.html"
+    }
+  },
+  {
+    "name": "Week 4",
+    "table": {
+      "name": "Table",
+      "icon": "fa-table",
+      "link": "./week4/table.html"
+    }
+  },
+  {
+    "name": "Week 5",
+    "latter-day-prophets": {
+      "name": "Latter Day Prophets",
+      "icon": "fa-user",
+      "link": "./week5/latter-day-prophets.html"
+    },
+    "weather": {
+      "name": "Weather",
+      "icon": "fa-sun",
+      "link": "./week5/weather.html"
+    }
+  }
+]

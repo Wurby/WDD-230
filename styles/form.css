@@ -11,9 +11,15 @@
   transform: translateY(1.7rem);
 }
 
-.form-wrapper h3 span {
+.form-wrapper .light {
   padding: 0.5rem 1rem;
   background-color: white;
+  color: var(--textFaded);
+}
+
+.form-wrapper .dark {
+  padding: 0.5rem 1rem;
+  background-color: var(--textDark);
   color: var(--textFaded);
 }
 

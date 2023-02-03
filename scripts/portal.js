@@ -1,15 +1,3 @@
-const collapsibles = document.querySelectorAll(".collapsible");
-
-collapsibles.forEach((collapsible) => {
-  collapsible.addEventListener("click", () => {
-    collapsible
-      .querySelector(".collapsible-content")
-      .classList.toggle("hidden");
-    collapsible.querySelector("span").classList.toggle("fa-plus");
-    collapsible.querySelector("span").classList.toggle("fa-minus");
-  });
-});
-
 const anchors = document.querySelectorAll("a");
 
 // open all external links in a new tab
@@ -29,6 +17,12 @@ sunIcon.forEach((el) => {
     });
     document.body.classList.toggle("dark");
     document.querySelector("main").classList.toggle("darkGrey");
+    document
+      .querySelector(".form-wrapper > h3 > span")
+      .classList.toggle("dark");
+    document
+      .querySelector(".form-wrapper > h3 > span")
+      .classList.toggle("light");
   });
 });
 
@@ -73,11 +67,10 @@ const visitCount = () => {
 document.querySelector("#visitCount").innerHTML = visitCount();
 
 const verifyUsername = (str) => {
-  // must be between 1 and 12 characters
   if (str.length < 5 || str.length > 12) {
     return false;
   }
-  // must contain at least one letter and one number
+
   const regex = /^(?=.*[a-zA-Z])(?=.*[0-9])/;
 
   return regex.test(str);
@@ -170,3 +163,44 @@ submitBtn.addEventListener("click", (e) => {
     submitBtn.innerHTML = "Message Sent";
   }
 });
+
+const displayWeek = (week) => {
+  const collapsible = document.createElement("div");
+  collapsible.classList.add("collapsible");
+  const collapsibleTitle = document.createElement("p");
+  collapsibleTitle.innerHTML = `${week.name} <span class="fa-solid fa-plus"></span>`;
+  const collapsibleContent = document.createElement("div");
+  collapsibleContent.classList.add("collapsible-content");
+  collapsibleContent.classList.add("hidden");
+
+  collapsibleTitle.addEventListener("click", () => {
+    collapsibleContent.classList.toggle("hidden");
+    collapsibleTitle.querySelector("span").classList.toggle("fa-plus");
+    collapsibleTitle.querySelector("span").classList.toggle("fa-minus");
+  });
+
+  const projects = Object.values(week);
+  projects.forEach((project, index) => {
+    if (index != 0) {
+      const projectLink = document.createElement("a");
+      projectLink.href = project.link;
+      projectLink.innerHTML = `<span class="fa-solid ${project.icon}"></span> ${project.name}`;
+      collapsibleContent.appendChild(projectLink);
+    }
+  });
+
+  collapsible.appendChild(collapsibleTitle);
+  collapsible.appendChild(collapsibleContent);
+  document.querySelector(".learning-activities").appendChild(collapsible);
+};
+
+const getLearningActivites = async () => {
+  const response = await fetch("./scripts/projects.json");
+  const data = await JSON.parse(await response.text());
+
+  data.forEach((week) => {
+    displayWeek(week);
+  });
+};
+
+getLearningActivites();
