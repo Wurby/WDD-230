@@ -24,7 +24,7 @@
     <div class="hero-img"></div>
     <div class="top-bar">
       <nav>
-        <a href="./../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a>
         <a><i class="fa-solid fa-hamburger"></i></a>
       </nav>
       <section class="menu closed">
@@ -34,42 +34,24 @@
         <a href="./join.html">Join</a>
       </section>
       <header>
-        <h3>Smithfield Chamber of Commerce</h3>
+        <h3>Smithfield Directory</h3>
       </header>
     </div>
     <main>
-      <section class="cta">
-        <button class="btn">Join the Chamber</button>
+      <section class="display-type">
+        <div></div>
+        <button class="btn"><i class="fa-solid fa-th"></i></button>
+        <div>
+          Membership Levels <span class="membership-Bronze">Bronze</span>
+          <span class="membership-Silver">Silver</span>
+          <span class="membership-Gold">Gold</span>
+          <span class="membership-Non-Profit">Non-Profit</span>
+        </div>
+        <button class="btn"><i class="fa-solid fa-list"></i></button>
+        <div></div>
       </section>
-
-      <div class="cards">
-        <section class="card">
-          <h3>Current Events</h3>
-          <ul>
-            <li>Book reading at the high school</li>
-            <li>Smithfield High School Football Game</li>
-            <li>Nature walk at mack park</li>
-          </ul>
-        </section>
-        <section class="card">
-          <h3>Weather</h3>
-          <div id="weather-info">
-            <p>
-              The current temperature in Smithfield, Utah is
-              <span id="current-temp"></span>
-            </p>
-            <figure>
-              <img id="weather-icon" src="" alt="" />
-              <figcaption></figcaption>
-            </figure>
-          </div>
-          <script src="./scripts/weather.js"></script>
-        </section>
-        <section class="card">
-          <h3>Company Spotlight</h3>
-          <div id="company-spotlight"></div>
-        </section>
-      </div>
+      <section id="directory-items" class="directory-list"></section>
+      <script src="./scripts/directory.js"></script>
     </main>
     <footer>
       <div id="footer-contact-information">

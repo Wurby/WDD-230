@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Stonefire Pizzeria",
+    "address": "33 E 600 S, Smithfield, UT 84335",
+    "phoneNumber": "+14355633322",
+    "website": "http://www.smithfieldstonefirepizzeria.com/",
+    "imgUrl": "https://lh5.googleusercontent.com/p/AF1QipOJDQtOR5j7vaaPJT2s_xWdVovTE3ikWr6xFmX6=w408-h306-k-no",
+    "membershipLevel": "Silver"
+  },
+  {
+    "name": "La Unica",
+    "address": "785 Main St, Smithfield, UT 84335",
+    "phoneNumber": "+14355353212",
+    "website": "",
+    "imgUrl": "https://lh5.googleusercontent.com/p/AF1QipMPHfotlITrpOP35_cPa54EynxzmJkJQ87awzW3=w408-h306-k-no",
+    "membershipLevel": "Bronze"
+  },
+  {
+    "name": "Old Grist Mill Smithfield",
+    "address": "10 Main St, Smithfield, UT 84335",
+    "phoneNumber": "+14357993850",
+    "website": "http://www.logangristmill.com/",
+    "imgUrl": "https://lh5.googleusercontent.com/p/AF1QipNIqK-jvksLkJnoKlr8uTp4qeEtUBXjqYjjdRsp=w408-h306-k-no",
+    "membershipLevel": "Bronze"
+  },
+  {
+    "name": "Alpine Cleaning and Restoration Specialists",
+    "address": "177 South Main, Smithfield, UT 84335",
+    "phoneNumber": "+14354857833",
+    "website": "https://www.alpinecleaning.com/fire-damage-restoration/",
+    "imgUrl": "https://lh5.googleusercontent.com/p/AF1QipMaWDNMPgZQ1kO4fIDSl8foeJ7l0h3P15PY6zGd=w408-h248-k-no",
+    "membershipLevel": "Gold"
+  },
+  {
+    "name": "M&M Fireworks",
+    "address": "355 W 100 N, Smithfield, UT 84335",
+    "phoneNumber": "+14359321010",
+    "website": "https://www.facebook.com/MM-Fireworks-107030251523472",
+    "imgUrl": "https://lh5.googleusercontent.com/p/AF1QipMCJnlZfikpSaM1TnzwRw20eFAo7DDFh6Z9Dh5k=w408-h406-k-no",
+    "membershipLevel": "Bronze"
+  },
+  {
+    "name": "Canyon Dental Care",
+    "address": "291 Main St C, Smithfield, UT 84335",
+    "phoneNumber": "+14355632553",
+    "website": "http://www.canyondentalcare.com/",
+    "imgUrl": "https://lh5.googleusercontent.com/p/AF1QipPFf5TGDJhKVFAkhWQzjhtjKbyuU7z8o6kp1VkF=w408-h271-k-no",
+    "membershipLevel": "Non-Profit"
+  },
+  {
+    "name": "Seize The Night Records",
+    "address": "196 N 100 E, Smithfield, UT 84335",
+    "phoneNumber": "+14355355885",
+    "website": "https://www.seizethenightrecords.com/",
+    "imgUrl": "https://lh5.googleusercontent.com/p/AF1QipNtgm5f8kQViztdhqvCRbDVg9qQ96E9NCETTri4=w408-h306-k-no",
+    "membershipLevel": "Gold"
+  }
+]

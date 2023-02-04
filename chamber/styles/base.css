@@ -13,6 +13,11 @@
   --textLarge: 1.4rem;
   --textXLarge: 1.6rem;
   --shadow: #3a4e59;
+
+  --bronze: #bb8a59;
+  --silver: #b9bdc0;
+  --gold: #d2c05c;
+  --nonProfit: #d76666;
 }
 
 h1,
@@ -203,6 +208,24 @@ header {
   width: 100%;
 }
 
+#weather-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+figure {
+  align-self: center;
+  max-height: 40px;
+}
+
+#weather-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 footer {
   bottom: 0;
   width: 100%;
@@ -317,4 +340,84 @@ textarea:focus {
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+.display-type {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.display-type > div {
+  width: 33%;
+  flex-grow: 1;
+}
+
+.directory-grid {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.directory-list {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.directory-list > * > img {
+  display: none;
+}
+
+.directory-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--accentDark);
+}
+
+.directory-list > .directory-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.25rem;
+  border: 1px solid var(--accentDark);
+}
+
+.membership-Bronze {
+  background-color: var(--bronze);
+}
+
+.membership-Silver {
+  background-color: var(--silver);
+}
+
+.membership-Gold {
+  background-color: var(--gold);
+}
+
+.membership-Non-Profit {
+  background-color: var(--nonProfit);
+}
+
+#company-spotlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#company-spotlight > * {
+  margin: 1rem;
+}
+
+#company-spotlight > * > img {
+  width: 65%;
+  height: 65%;
+  object-fit: cover;
 }
